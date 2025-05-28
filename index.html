@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Продукты</title>
+  <link rel="stylesheet" href="stylesprod.css">
+</head>
+<body>
+
+  <!-- Хедер -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo"><a href="javascript:history.back()">Наша продукция</a></div>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span class="menu-text">Menu</span>
+        <span class="close-icon">&times;</span>
+      </button>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="https://diana11-o.github.io/okompanii/">О компании</a></li>
+        <li><a href="#">Услуги</a></li>
+        <li><a href="#">Наши работы</a></li>
+        <li><a href="https://diana11-o.github.io/zakazvotka/">Заказать обратный звонок</a></li>
+      </ul>
+    </nav>
+  </header> 
+  
+  <div class="grid-container vh-60">
+    <div class="grid-item animated-block">
+      <div class="gradient-background"></div>
+      <div class="glass-texture"></div>
+      <div class="text-overlay">
+        <a href="https://diana11-o.github.io/steclo/" class="glass-link"> 
+        <h2>Стекло</h2>
+        </a>
+      </div>
+    </div>
+  
+    <div class="grid-item img-item">
+      <img src="ima/стекло.jpg" alt="Exhibition Image 1">
+    </div>
+  </div>
+      <!-- Второй ряд с анимацией и картинками  -->
+  <div class="grid-container vh-90">
+    <div class="grid-item img-item">
+      <img src="ima/зеркало.jpg" alt="Exhibition Image 2">
+    </div>
+    <!-- Правая сторона: анимация и текст -->
+    <div class="grid-item animated-block">
+      <div class="gradient-background"></div>
+      <div class="text-overlay">
+        <a href="https://diana11-o.github.io/zercalo/" class="zercalo-link"> 
+        <h2>Зеркала</h2>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-container vh-60">
+    <div class="grid-item animated-block">
+      <div class="gradient-background"></div>
+      <div class="text-overlay">
+        <a href="https://diana11-o.github.io/gravi-/" class="gravirovca-link"> 
+        <h2>Гравировка</h2>
+        </a>
+      </div>
+    </div>
+    <div class="grid-item img-item">
+      <img src="ima/графировка.jpg" alt="Exhibition Image 1">
+    </div>
+  </div>
+
+  <div class="grid-container vh-90">
+    <div class="grid-item img-item">
+      <img src="ima/zalivnoi.jpg" alt="Exhibition Image 2">
+    </div>
+    <div class="grid-item animated-block">
+      <div class="gradient-background"></div>
+      <div class="text-overlay">
+        <a href="https://diana11-o.github.io/vitraj/" class="zalivnoi-link"> 
+        <h2>Заливной витраж</h2>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-container vh-60">
+    <div class="grid-item animated-block">
+      <div class="gradient-background"></div>
+      <div class="text-overlay">
+        <a href="https://diana11-o.github.io/spechenoe/" class="spechenoe-link"> 
+        <h2>Спеченное стекло</h2>
+        </a>
+      </div>
+    </div>
+    <div class="grid-item img-item">
+      <img src="ima/спеченное.jpg" alt="Exhibition Image 1">
+    </div>
+  </div>
+
+  <div class="grid-container vh-90">
+    <div class="grid-item img-item">
+      <img src="ima/plenochnii.png" alt="Exhibition Image 2">
+    </div>
+    <div class="grid-item animated-block">
+      <div class="gradient-background"></div>
+      <div class="text-overlay">
+        <a href="https://diana11-o.github.io/vitrajj/" class="plenka-link"> 
+        <h2>Пленочный витраж</h2>
+        </a>
+    </div>
+  </div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const siteHeader = document.querySelector('.site-header');
+
+    menuToggle.addEventListener('click', function () {
+      siteHeader.classList.toggle('menu-open');
+    });
+  });
+</script>
+</body>
+</html>
